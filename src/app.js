@@ -1,7 +1,6 @@
 // DEPENDENCIAS
 // require('./js-foundation/02.-destructuring');
 // require('./js-foundation/03.-callbacks');
-// const { buildLogger} = require('./plugins')
 
 // *05.-FACTORY FUNCTIONS
 // const {getAge, getUUID} = require('./plugins')
@@ -14,28 +13,29 @@
 // console.log(Javier);
 
 // *06.-PROMISES
-const { getPokemonById } = require("./js-foundation/06.-promises");
+// const { getPokemonById } = require("./js-foundation/06.-promises");
 
-// Metodo 1 promesa con then
-getPokemonById(4)
-  .then((pokemonName) => console.log({ pokemonName }))
-  .catch((err) => console.error("Por favor intente de nuevo"))
-  .finally(() => console.log("Finalmente"));
-
-//   Method 2: promise with async await
-
-
-
-
-
-
-
+// Promesa con then
+// getPokemonById(4)
+//   .then((pokemonName) => console.log({ pokemonName }))
+//   .catch((err) => console.error("Por favor intente de nuevo"))
+//   .finally(() => console.log("Finalmente"));
+  
+  // *07.-WINSTON
+  
+  const { buildLogger} = require('./plugins');
+  const logger = buildLogger('app.js');
+  
+  logger.log('Hola mundo')
 
 
 
-// const logger = buildLogger('app.js');
 
-// logger.log('Hola mundo')
+
+
+
+
+
 // logger.error('Esto es algo malo');
 
 // getPokemonById(4)

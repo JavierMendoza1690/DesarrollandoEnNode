@@ -11,7 +11,6 @@ const httpClientPlugin = {
 
     //* Method 2: http request with axios
     const {data}= await axios.get(url)
-    
     return data
     
   },
