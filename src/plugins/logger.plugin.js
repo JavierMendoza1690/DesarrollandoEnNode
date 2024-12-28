@@ -40,7 +40,7 @@ module.exports = function buildLogger(service) {
       logger.log("info", { message, service });
     },
     error: (message) => {
-      logger.log("error", { message, service});
+      logger.error("error", { message, service});
     },
   };
 };

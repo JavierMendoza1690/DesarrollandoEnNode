@@ -20,23 +20,14 @@
 //   .then((pokemonName) => console.log({ pokemonName }))
 //   .catch((err) => console.error("Por favor intente de nuevo"))
 //   .finally(() => console.log("Finalmente"));
-  
-  // *07.-WINSTON
-  
-  const { buildLogger} = require('./plugins');
-  const logger = buildLogger('app.js');
-  
-  logger.log('Hola mundo')
 
+// *07.-WINSTON
 
+const { buildLogger } = require("./plugins");
+const logger = buildLogger("app.js");
 
-
-
-
-
-
-
-// logger.error('Esto es algo malo');
+logger.log("Hola mundo");
+logger.error("Esto es algo malo");
 
 // getPokemonById(4)
 //     .then(pokemonName => console.log({pokemonName}))
